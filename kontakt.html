@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>WashTeam</title>
+  </head>
+  <body>
+      
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4" id="NavBar" >
+       <a class="navbar-brand" href="#">WashTeam</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Strona Glowna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="uslugi.html">Uslugi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cennik.html">Cennik</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        
+        </div>
+   </nav>
+   <div class= "container">
+       <div class="row">
+           <div class=" col-md-5 col-sm-12 form-contact mt-4">
+               <h3> Formularz kontaktowy</h3>
+               <form >
+                   <div class="form-group">
+                       <label for="formGroupExampleInput">Imię</label>
+                       <input type="text" class="form-control" id="formGroupExampleInput" >
+                   </div>
+                   <div class="form-group">
+                       <label for="formGroupExampleInput">Nazwisko</label>
+                       <input type="text" class="form-control" id="formGroupExampleInput">
+                   </div>
+                   <div class="form-group">
+                       <label for="formGroupExampleInput">Numer Telefonu</label>
+                       <input type="text" class="form-control" id="formGroupExampleInput">
+                   </div>
+                   <div class="form-group">
+                       <label for="exampleFormControlInput1"> Emial</label>
+                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                   </div>
+                
+                   <div class="form-group">
+                       <label for="exampleFormControlTextarea1">Wiadomość</label>
+                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                   </div>
+                   <button type="submit" class="btn btn-primary">Wyślij</button>
+               </form>
+               
+           </div>
+           <div  class="col-md-6 col-sm-12 " >
+               <h4 class="pb-3 pt-4">Działamy na teranie calej Warszawy i okolic</h4>
+               <div id="map"></div>
+               
+           </div>
+   
+       </div>
+       
+   </div>
+  <div class="container">
+      <div class="row ">
+          <ul class="list-inline mb-5">
+              <li class="list-inline-item">
+                  <i class="fa fa-envelope icons"></i>
+                  <p>washteam24@gmail.com</p>
+              </li>
+              <li class="list-inline-item">
+                  <i class="fa fa-phone icons"></i>
+                  <p>507 854 333</p>
+              </li>
+          </ul>
+        </div>
+  
+  </div>
+   
+   
+   
+   
+   <footer class="footer text-center ">
+        <div class="container ">
+            <ul class="list-inline mb-5 ">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/Washteampl/"target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item ">
+                    <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/washteam24/?igshid=33fbgmd0daph&fbclid=IwAR3dUZH8oiGpu7zJBMpxe_r2xpzh8KC-l6Nzgp8vGSFCICzugLDxQGy6iD4" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            
+          
+            <ul class=" footer-kontakt">
+                <li class="list-inline-item">
+                    <p><i class="fa fa-envelope mr-2"></i>washteam24@gmail.com</p>
+                </li>
+                <li class="list-inline-item">
+                    <p><i class="fa fa-phone mr-2"></i>507 854 333 </p>
+                </li>
+            </ul>
+         
+         
+            <p class="text-muted small mb-0 ">Copyright &copy; 2019| Vars&Sava Devs | Registered Company in Ireland | Privacy Policy</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>
+        var citymap = {
+            warszawa: {
+                center: { lat: 52.229676, lng: 21.012229},
+                population: 10000
+            }
+        };
+       
+        var locations ={
+             otwock: {
+                center :{lat: 52.1053186, lng: 21.2616248}
+             },
+             warszawa: {
+                center: { lat: 52.229676, lng: 21.012229},
+               
+            },
+            garwolin: {
+                center: { lat: 51.8971987, lng: 21.6149393 }, 
+        
+            },
+            zabki: {
+                center: { lat: 52.2870682, lng: 21.1079604 }, 
+        
+            },
+            zielonka: {
+                center: { lat: 52.3034398, lng: 21.1607239 }, 
+        
+            },
+            marki: {
+                center: { lat: 52.3213443, lng: 21.1035662}, 
+        
+            },
+        };
+    
+        function initMap() {
+            // Create the map.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 9,
+                center: { lat: 52.229676, lng: 21.012229 },
+                mapTypeId: 'terrain'
+            });
+            
+    
+            // Construct the circle for each value in citymap.
+            // Note: We scale the area of the circle based on the population.
+            for (var city in citymap) {
+                // Add the circle for this city to the map.
+                var cityCircle = new google.maps.Circle({
+                    strokeColor: '#3385ff',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2,
+                    fillColor: '#3385ff',
+                    fillOpacity: 0.35,
+                    map: map,
+                    center: citymap[city].center,
+                    radius: Math.sqrt(citymap[city].population) * 100
+                });
+            }
+            
+            for (var location in locations){
+                var marker = new google.maps.Marker({position:locations[location].center, map: map});
+            }
+            
+            
+          
+        }
+      
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGvx1zAN8-b00WHQvpxVopwNEvmG1X6m8&callback=initMap"async defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
