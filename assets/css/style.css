@@ -24,19 +24,27 @@ body,html{
 
 .nav-link:hover {
     background-color: #005cb3;
+    
 }
 
 .navbar-brand {
     font-size: 1.7em;
 }
 
-
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
 
 /*.........................................................Carousel*/
 .bd-example {
     padding-bottom: 5%;
 }
-
+.carousel-caption {
+    background-color: rgb(0, 0, 0, 0.45);
+}
 
 
 /*.........................................................Card*/
@@ -132,8 +140,11 @@ body,html{
 /*.......................................................Cennik*/
 
 #bg-jumbotron {
-    background-image:url("https://thumbs.dreamstime.com/z/man-cleaning-salon-rag-car-107145692.jpg")!important; 
-    background-repeat: no-repeat; 
+    background:url("https://scontent.fdub1-1.fna.fbcdn.net/v/t1.0-9/67471469_2282102701842959_2534181092919869440_n.jpg?_nc_cat=108&_nc_oc=AQlWLWiNh9iPQEDo3ALiB0Ioc3n1ktlGYh7EEVGnwDwr2WZp-n6ILViKpVA5756PyZk&_nc_ht=scontent.fdub1-1.fna&oh=4194d47558eb9303b9cbc20770d75364&oe=5E02B342")!important; 
+     background-size: 100%, cover !important;
+     
+    
+    
 }
 
 .cennik-container {
@@ -169,5 +180,17 @@ body,html{
 }
 
 .product-dispaly {
-    height: 35vh;
+    height: 28vh;
+}
+
+
+/*....................................................Media*/
+
+
+
+@media (min-width: 300px){
+  .text-about {
+    margin-left: 20px;
+    margin-right:20px;
+}
 }
